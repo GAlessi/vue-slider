@@ -7,6 +7,10 @@ function init() {
             'imgNum': 1
         },
 
+        mounted: function () {
+            setInterval(this.next,2000)
+        },
+
         methods:{
             prev: function () {
                 if (this.imgNum == 0) {
@@ -21,7 +25,7 @@ function init() {
                 }else {
                     this.imgNum ++
                 }
-            }
+            },
         }
     });
 }
