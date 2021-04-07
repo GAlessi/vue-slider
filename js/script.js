@@ -3,7 +3,6 @@ function init() {
         el: '#app',
 
         data:{
-            'imgPath': "img/pic-",
             'imgNum': 1
         },
 

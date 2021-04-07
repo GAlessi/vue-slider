@@ -18,7 +18,7 @@
         <div id="app" class="container">
             <div class="row">
                 <button @click="prev" type="button" name="button">Back</button>
-                <img :src="imgPath + imgNum + '.jpg'" alt="">
+                <img :src="'img/pic-' + imgNum + '.jpg'" alt="">
                 <button @click="next" type="button" name="button">Forward</button>
             </div>
         </div>
