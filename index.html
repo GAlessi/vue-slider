@@ -18,8 +18,12 @@
         <div id="app" class="container">
             <div class="row">
                 <button @click="prev" type="button" name="button">Back</button>
-                <img :src="'img/pic-' + imgNum + '.jpg'" alt="">
+                <img :src="'img/pic-' + imgNum + '.jpg'">
                 <button @click="next" type="button" name="button">Forward</button>
+            </div>
+            <div class="row">
+                <i :class="(i -1 == imgNum) ? 'active' : ''"class="fas fa-circle" v-for="i in 3"></i>
+
             </div>
         </div>
     </body>

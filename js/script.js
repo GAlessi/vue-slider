@@ -3,7 +3,7 @@ function init() {
         el: '#app',
 
         data:{
-            'imgNum': 1
+            'imgNum': 0
         },
 
         mounted: function () {
